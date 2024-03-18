@@ -1,0 +1,10 @@
+survey_id,treatment,n,common_name,species,origin,family,category,mean_length,max_length,min_length,site_id,indicator
+S1,hive,2.0,Doublebar cardinalfish,Apogonichthyoides sialis,"(Jordan & Thompson, 1914)",Apogonidae,Fish,,,,C-SNG23-MI-01,
+S1,hive,1.0,Indo-Pacific sergeant,Abudefduf vaigiensis,"(Quoy & Gaimard, 1825)",Pomacentridae,Fish,,,,C-SNG23-MI-01,
+S1,hive,2.0,Rock crab,na,na,na,Invert,,,,C-SNG23-MI-01,
+S1,control,5.0,Indo-Pacific sergeant,Neopomacentrus bankieri,"(Richardson, 1846)",Neopomacentrus,Fish,,,,C-SNG23-MI-01,
+S1,control,22.0,Diadema setosa,Diadema setosum,"(Leske, 1778)",Diadematidae,Invert,,,,C-SNG23-MI-01,
+S1,control,10.0,Purple sea urchin,Heliocidaris crassispina,"(A. Agassiz, 1864)",Echinometridae,Invert,,,,C-SNG23-MI-01,
+S2,hive,95.0,Diadema setosum,Diadema setosum,"(Leske, 1778)",Diadematidae,Invert,,,,C-SNG23-MI-01,Y
+S2,control,10.0,Diadema setosum,Diadema setosum,"(Leske, 1778)",Diadematidae,Invert,,,,C-SNG23-MI-01,Y
+S1,hive,1.0,Pennant coralfish,Heniochus acuminatus,"(Linnaeus, 1758)",Chaetodontidae,Fish,8.0,,,C-CSS23-BI-01,

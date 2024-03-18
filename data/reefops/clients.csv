@@ -1,0 +1,8 @@
+client_id,client_code,name,onboarded,address,contact_name,contact_department,primary_mobile_no,primary_email,region,geo_code,reeftiles
+1,ADQ,ADQ,TRUE,"Capital Gate, Al Khaleeh Al Arabi Street, Building 10th Floor, Abu Dhabi",Kai Ling Ting,Head of Innovation and R and D,00971 56 688 8466,kting@adq.ae,Arabian Gulf,UAE,TRUE
+2,ADP,Abu Dhabi Ports,TRUE,,,,,,Arabian Gulf,UAE,FALSE
+3,SNG,Sino Group,TRUE,"11th-12th Floor, Tsim Sha Tsui Centre, Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong",,,,,Hong Kong,HKG,TRUE
+4,CSS,Chow Sang Sang,TRUE,"20/F, 9 Wing Hong Street, Cheung Sha Wan, Kowloon, Hong Kong",Hugo Wong,Marketing Assistant,+852 2192 3860,hugo.wong.212911@chowsangsang.com,Hong Kong,HKG,TRUE
+5,OCP,Ocean Park,TRUE,"Ocean Park Hong Kong, 180 Wong Chuk Hang Road, Aberdeen, Hong Kong",Alex Wong,"Coral REEFStoration Centre, the Grand Aquarium (CRC)",+852 5110 4094,alex.cc.wong@oceanpark.com.hk,Hong Kong,HKG,FALSE
+6,FAB,First Abu Dhabi Bank,FALSE,"Abu Dhabi, United Arab Emirates ",Kritika kadekodi,"ESG, Group Risk Management",00971 56 9957391,Lritika.Kadekodi@bankfab.com,Arabian Gulf,UAE,TRUE
+7,EPH,Emirates Palace Hotel,FALSE,"West Corniche Road , Al Ras Al Akhdar, Abu Dhabi",Irina Kurbatova,,,IKurbatova@mohg.com,Arabian Gulf,UAE,FALSE

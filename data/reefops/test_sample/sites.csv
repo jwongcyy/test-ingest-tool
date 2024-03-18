@@ -1,0 +1,3 @@
+site_id,site_name,client,type,area_m2,quantity,deployed_tiles,coral_frag,batch_number,country,city,locality_name,latitude,longitude,start_date,end_date,status,project manager,destroyed tiles,to be deployed
+C-ADQ23-HI-01,Hook Island ADQ,Abu Dhabi Developmental Holding Company PJSC,reef_tiles,40,160,160,250,xxxx,United Arab Emirates,Abu Dhabi,Hook Island,24.36042463,52.76283082,06/03/2023,11/03/2023,done,Vriko Yu,0,0
+C-SNG23-MI-01,CORAL REEFstoration,Sino Group,reef_tiles,20,80,30,150,,Hong Kong,Hong Kong,Middle Island,22.23341,114.18623,24/05/2023,24/05/2023,38%,Hayley Wong,5,55

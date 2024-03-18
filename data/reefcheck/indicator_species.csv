@@ -1,0 +1,67 @@
+common_name,species,type,min_size_cm,of,df,cf,af ,op,cc,indo_pacific,uae,hkg,region
+Butterfly Fish,Chaetodontidae,Fish,,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Grouper,Serranidae,Fish,30,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Moray eel,Muraenidae,Fish,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Parrotfish,Scaridae,Fish,20,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Snapper,Lutjanidae,Fish,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Sweetlips,Haemulidae,Fish,,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Banded coral shrimp,Stenopus hispidus,Invert,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Lobster,Malacostraca,Invert,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Long-spined black sea urchins,Diadema spp.,Invert,,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,Global
+Collector Urchin,Tripneustes spp.,Invert,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Global
+Barrimundi Cod,Chromileptes altivelis,Fish,,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,Indo-Pacific
+Bumphead Parrotfish,Bolbometopon muricatum,Fish,,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Indo-Pacific
+Humphead Wrasse,Cheilinus undulatus,Fish,,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Indo-Pacific
+Crown-of-thorns starfish,Acanthaster planci,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Indo-Pacific
+Pinkfish,Holothuria edulis,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Indo-Pacific
+Greenfish,Stichopus chloronotus,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Indo-Pacific
+Prickly Redfish,Thelenota ananas,Invert,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,Indo-Pacific
+Giant clams,Tridacna spp.,Invert,,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,Indo-Pacific
+Pencil urchin ,Heterocentrotus mammilatus,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,Indo-Pacific
+Triton shell,Charonia tritonis,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,Indo-Pacific
+Arabian butterflyfish,Chaetodon melapterus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Barrimundi cod,Chromileptes altivelis,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Black spotted grunt ,Plectorhinchus gaterinus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Dark butterflyfish,Chaetodon nigropunctatus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Grey grunt,Plectorhinchus sordidus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Humphead Wrasse,Cheilinus undulatus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Longfin bannerfish ,Heniochus acuminatus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Orange-spotted grouper,Epinephelus coioides,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Spotted grunt,Plectorhinchus pictus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Black urchin,Echinothrix diadema,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Cowries,Cypraeidae,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Crown-of-thorns starfish,Acanthaster planci,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Pencil urchin,Heterocentrotus mammilatus,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Sea cucumber ,Holothuroidea,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Short spine urchin,Echinometra mathaei,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Triton,Charonia tritonis,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Arabian Gulf
+Nassau Grouper,Epinephelus striatus,Fish,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Atlantic
+Glamingo tongue,Cyphoma gibbosum,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,Atlantic
+Gorgonians ,Alcyonacea,Invert,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,Atlantic
+Pencil urchin,Eucidaris spp.,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,Atlantic
+Triton,Charonia variegata,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Atlantic
+Eightband butterflyfish,Chaetodon octofasciatus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Mirro butterflyfish,Chaetodon speculum,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Threadin butterflyfish,Chaetodon auriga,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Chocolate hind,Cephalopholis boenak,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Painted sweetlips,Diagramma pictum,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Rock grouper,Epinephelus fasciatomaculosus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Longfin grouper,Epinephelus quovanus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Laced moray,Gymnothorax favagineus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Chinese wrasse,Halichoeres tenuispinis,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Spotted seahorse,Hippocampus kuda,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Russell's snapper,Lutjanus russellii,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Coral trout,Plectropomus leopardus,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Blue-barred parrotfish,Scarus ghobban,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Moon wrasse,Thalassoma lunare,Fish,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Purple sea urchin,Heliocidaris crassispina,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Cowrie,Cypraea arabica,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Cowrie,Cypraea vitellus,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Diadema urchin,Diadema setosum,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Sea urchin,Parasalenia gratiosa,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Nudibranch,Gymnodoris inornata,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Nudibranch,Hypselodoris festiva,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Sea cucumber,Holothuria impatiens,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Common black sea cucumber,Holothuria leucospilota,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Starfish,Luidia maculate,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong
+Lobster,Panulirus longipes,Invert,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,Hong Kong

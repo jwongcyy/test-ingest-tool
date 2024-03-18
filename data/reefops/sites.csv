@@ -1,0 +1,6 @@
+site_id,site_name,client_code,type,area_m2,quantity,deployed_tiles,coral_frag,country,geo_code,city,locality_name,latitude,longitude,start_date,end_date,status,project_manager,destroyed_tiles,to_deploy,ref_site_id,ref_site_locality,ref_site_latitude,ref_site_longitide,ref_site_distance_km,ref_site_depth,ref_cover,ref_surivorship,ref_rugosity
+C-ADQ23-HI-01,Hook Island Coral Restoration,ADQ,reef_tiles,40,160,160,250,United Arab Emirates,UAE,Abu Dhabi,Hook Island,24.36042463,52.76283082,06/03/2023,11/03/2023,done,Vriko Yu,0,0,C-ADQ23-HI-RF,Hook Island - Blue Hole,24.36516517,52.76105042,0.48,,15,95,2.2
+C-SNG23-MI-01,CORAL REEFstoration,SNG,reef_tiles,20,80,30,150,China,HKG,Hong Kong,Middle Island,22.23341,114.18623,24/05/2023,24/05/2023,38%,Hayley Wong,5,55,C-SNG23-MI-RF,,,,,,15,95,2.2
+C-CSS23-BI-01,Harbour of Love,CSS,reef_tiles,20,111,115,480,China,HKG,Hong Kong,Bluff Island,22.324489,114.353597,22/02/2023,23/02/2023,done,Hayley Wong,4,0,C-CSS23-BI-RF,,,,,,15,95,2.2
+W-ADP24-AS-01,Eco-Sea Walls Pilot - Al Saadiyat Island,ADP,seawall,,,,,United Arab Emirates,UAE,Abu Dhabi,Al Saadiyat Island,,,,,,Lamisse Zerrouki,,,,,,,,,,,
+W-ADP24-AA-01,Eco-Sea Walls Pilot - Al Aliah Island,ADP,seawall,,,,,United Arab Emirates,UAE,Abu Dhabi,Al Aliah Island,,,,,,Lamisse Zerrouki,,,,,,,,,,,project 

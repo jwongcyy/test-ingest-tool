@@ -1,8 +1,12 @@
 # Set Global File Path variables
 import os
+import os.path as path
+
+
+ROOT =  path.abspath(path.join(__file__ ,"../.."))
 
 # DIRECTORY PATHS
-ROOT = ".."
+# ROOT = ".."
 REPORTS = f"{ROOT}/report"
 DATA = f"{ROOT}/data"
 ASSETS = f"{ROOT}/global_assets"

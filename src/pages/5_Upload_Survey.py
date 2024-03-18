@@ -267,9 +267,9 @@ site=Site(site_id=site_id)
 show_img=st.toggle(label="Show Indicator Species Photos")
 if show_img:
     img_gallery=st.container(border=True)
-    img_path=r"C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefcheck\images"
+    img_path=f"{root}/data/reefcheck/images"
     region_species=indicator_species[indicator_species[site.geo_code.lower()] == True].reset_index()
-    region_species["img"]=[f"{img_path}/{sp.lower().replace(" ", "_").replace(".","")}.jpg" for sp in region_species.species]
+    region_species["img"]=[f"{img_path}/{sp.lower().replace(' ', '_').replace('.','')}.jpg" for sp in region_species.species]
     cols=5
     rows=len(region_species) / 5
     if rows > int(rows):

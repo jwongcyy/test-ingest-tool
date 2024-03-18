@@ -23,7 +23,7 @@ clients=pd.read_csv(f'{root}/data/reefops/clients.csv')
 client_names=clients.name
 
 sites=pd.read_csv(f'{root}/data/reefops/sites.csv')
-
+surveys=pd.read_csv(f'{root}/data/reefops/surveys.csv')
 rsfm_data=pd.read_csv(f'{root}/data/reefsfm/reefsfm_db_coral_metrics.csv')
 
 

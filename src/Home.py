@@ -150,11 +150,11 @@ for col, s_content in zip(cols, completed_surveys_content):
         cont=col.container(border=True)
         cont.header(s_content['survey_id'])
         cont.subheader(f"{date.day} {calendar.month_abbr[date.month]}, {date.year}")
-        cont.markdown(f"**{s_content["survey_type"].title()}**")
+        cont.markdown(f"**{s_content['survey_type'].title()}**")
         cont.write(s_content["agents"])
-        cont.markdown(f"{format_bool(s_content["reef_check"])} **ReefCheck**")
-        cont.markdown(f"{format_bool(s_content["sfm"])} **Photogrammetry**")
-        cont.markdown(f"{format_bool(s_content["vid360"])} **360 Video:**")
+        cont.markdown(f"{format_bool(s_content['reef_check'])} **ReefCheck**")
+        cont.markdown(f"{format_bool(s_content['sfm'])} **Photogrammetry**")
+        cont.markdown(f"{format_bool(s_content['vid360'])} **360 Video:**")
 
 st.divider()
 st.subheader(":date: Upcoming Surveys")
@@ -175,14 +175,10 @@ for col, s_content in zip(cols, upcoming_surveys_content):
         cont=col.container(border=True)
         cont.header(s_content['survey_id'])
         cont.subheader(f"{date.day} {calendar.month_abbr[date.month]}, {date.year}")
-        cont.markdown(f"**{s_content["survey_type"].title()}**")
+        cont.markdown(f"**{s_content['survey_type'].title()}**")
         
         time_delta = date- now
         cont.write(f"{time_delta.days} remaining days")
-      #   cont.markdown(f"{format_bool(s_content["reef_check"])} **ReefCheck**")
-      #   cont.markdown(f"{format_bool(s_content["sfm"])} **Photogrammetry**")
-      #   cont.markdown(f"{format_bool(s_content["vid360"])} **360 Video:**")
-
 
 st.divider()
 st.header("ReefCheck Data")
@@ -203,7 +199,7 @@ rsfm_data=rsfm_data[rsfm_data.site_id == selected_site.site_id]
 
 if len(rsfm_data) > 0: 
    
-   corals_df=pd.read_csv(r"C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefsfm\coral_masks.csv")
+   corals_df=pd.read_csv(f"{root}/data/reefsfm/coral_masks.csv")
    
    sl_col1,sl_col2=rs_col1.columns(2)
    

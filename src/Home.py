@@ -8,11 +8,17 @@ from streamlit_calendar import calendar
 from config import DATE_STR_FORMAT
 import calendar
 import datetime
+from ReefCheck import ReefCheck
+from ReefOps import Site
+import plotly.express as px
+from streamlit_folium import st_folium
 
 
+st.set_page_config(page_title="ReefOps Tool", layout="wide",page_icon=":tropical_fish:")
 
-st.set_page_config(page_title="ReefOps Tool", layout="wide",page_icon="🌍")
-
+def readable_date(date):
+    return f"{date.day} {calendar.month_abbr[date.month]}, {date.year}"
+    
 # Function to get survey data for pretty view
 def get_survey_content(sdata):
     output=sdata.apply(lambda x: x.to_dict(), axis = 1).to_list()
@@ -32,12 +38,10 @@ regions=["United Arab Emirates", "Hong Kong"]
 clients=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\clients.csv')
 clients=clients[(clients.onboarded==True) & (clients.reeftiles==True)]
 sites=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\sites.csv')
-surveys=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\surveys.csv')
-surveys["start_dt"]=pd.to_datetime(surveys.start_date,format=DATE_STR_FORMAT)
-surveys["end_dt"]=pd.to_datetime(surveys.end_date,format=DATE_STR_FORMAT)
+
+rsfm_data=pd.read_csv(r"C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefsfm\reefsfm_db_coral_metrics.csv")
 #Get list of client names
 client_names=clients.name
-
 
 
 # Add a selectbox to the sidebar:
@@ -46,9 +50,15 @@ client_selection = st.sidebar.selectbox(
       client_names
    )
 
+
 selected_client=clients[clients.name==client_selection].iloc[0]
 selected_site=sites[sites.client_code == selected_client.client_code].iloc[0]
-selected_survey=surveys[surveys.site_id == selected_site.site_id]
+
+
+site=Site(selected_site.site_id)
+selected_survey=site.surveys.survey_df
+selected_survey["start_dt"]=pd.to_datetime(selected_survey.start_date,format=DATE_STR_FORMAT)
+selected_survey["end_dt"]=pd.to_datetime(selected_survey.end_date,format=DATE_STR_FORMAT)
 
 st.header(f"{selected_client["name"]}")
 st.divider()
@@ -70,28 +80,31 @@ cl_col2.write(selected_client.primary_email)
 
 
 st.divider()
-st.header(f"Site: {selected_site.site_id}")
-st.subheader(selected_site.site_name)
-
+st.header(f"Site: {site.name}")
 st.divider()
 
 col1, col2, col3 = st.columns([1,1,3])
 
 # Column 1 content
-col1.metric(label="Deployment Type" , value=selected_site["type"].replace("_", " ").title())
-col1.metric(label="Locality:" , value=selected_site.locality_name)
-col1.metric(label="Country" , value=selected_site.country)
-col1.metric(label="City" , value=selected_site.city)
+col1.metric(label="Site ID", value=site.site_id)
+
+col1.metric(label="Deployment Type" , value=site.site_df["type"].replace("_", " ").title())
+col1.metric(label="Locality" , value=site.locality)
+col1.metric(label="Country" , value=site.site_df.country)
+col1.metric(label="City" , value=site.site_df.city)
 
 # Column 2 content
-col2.metric(label="Start Date" , value=selected_site.start_date)
-col2.metric(label="End Date" , value=selected_site.end_date)
-col2.metric(label="Project Area" , value=f"{int(selected_site.area_m2)} m2")
-col2.metric(label="Quantity" , value=int(selected_site.quantity))
+col2.metric(label="Project Manager", value=site.site_df.project_manager)
+col2.metric(label="Deployment Start Date" , value=readable_date(site.start_date))
+col2.metric(label="Deployment End Date" , value=readable_date(site.end_date))
+col2.metric(label="Project Area" , value=f"{int(site.area_m2)} m2")
+col2.metric(label="Quantity" , value=int(site.site_df.quantity))
 
 # Column 3 content
-map_data = pd.DataFrame(dict(lat= [selected_site.latitude],lon = [selected_site.longitude]))
-col3.map(map_data)
+# map_data = pd.DataFrame(dict(lat= [site.site_df.latitude],lon = [site.site_df.longitude], size=500))
+m=site.map(write_html=False)
+with col3:
+    st_folium(m, width= 900)
 
 
 st.divider()
@@ -165,10 +178,38 @@ for col, s_content in zip(cols, upcoming_surveys_content):
       #   cont.markdown(f"{format_bool(s_content["vid360"])} **360 Video:**")
 
 
+st.divider()
+st.header("ReefCheck Data")
+st.write("")
 
- 
+rc=ReefCheck(site_id=selected_site.site_id)
+st.write(rc.reefcheck_df.drop("site_id", axis =1))
 
 
+st.divider()
+st.header("ReefSFM Data")
+st.write("")
+rs_col1,rs_col2 = st.columns(2)
+rs_col1.subheader("Size Distributions")
+rs_col2.subheader("Dataset")
+rs_col2.write("")
+rsfm_data=rsfm_data[rsfm_data.site_id == selected_site.site_id]
 
+if len(rsfm_data) > 0: 
+   
+   corals_df=pd.read_csv(r"C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefsfm\coral_masks.csv")
+   
+   sl_col1,sl_col2=rs_col1.columns(2)
+   
+   sid=sl_col1.selectbox(label="Survey ID", options = corals_df.survey_id.unique())
+   corals_df=corals_df.set_index("survey_id").loc[sid].reset_index()
+   taxa=sl_col2.selectbox(label="Taxa", options = corals_df.taxa.unique())
+   corals_df=corals_df[corals_df.taxa ==taxa]
+   fig = px.histogram(corals_df, x="area_cm2", labels=dict(area_cm2="Area (cm2)", y="Count"))
+
+   rs_col1.plotly_chart(fig)
+   rs_col2.write(rsfm_data)
+else:
+    st.write("No ReefSFM Data Available")
 
 

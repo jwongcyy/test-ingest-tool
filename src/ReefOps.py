@@ -189,7 +189,7 @@ class Site:
         # CartoDB Positron
         icon = folium.features.CustomIcon(ICON, icon_size=(40, 40))
 
-        map = folium.Map(location=[self.lat, self.lon], tiles="CartoDB Positron", zoom_start=11)
+        map = folium.Map(location=[self.lat, self.lon], tiles="CartoDB Positron", zoom_start=9)
         folium.Marker([self.lat, self.lon],
                       icon=icon).add_to(map)
         folium.LayerControl().add_to(map)

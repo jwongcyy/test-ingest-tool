@@ -19,6 +19,19 @@ st.set_page_config(page_title="Create Agent", page_icon="🌍")
 st.markdown("# Create Agent")
 st.divider()
 
+# Function to structure all data into dictionary
+def get_data():
+    data=dict(
+        first_name=first,
+        last_name=last,
+        abbreviation=abbreviation,
+        job_title=job_title,
+        company=company
+    )
+
+    # Write Data to DB....
+    print(data)
+    st.write(data)
 
 #Get list of client names
 client_names=clients.name
@@ -36,7 +49,5 @@ company=col2.text_input(label="Company Name")
 
 # Columnt 2 Content
 
-
-
-
-st.button("SUBMIT")
+cont=st.container(border=True)
+st.button("SUBMIT", on_click=get_data)

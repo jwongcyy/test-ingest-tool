@@ -25,13 +25,14 @@ project_types=["Reef Tiles","EcoSeaWall", "Site Assessment"]
 project_keys=["C","W","A"]
 project_dict=dict(zip(project_types,project_keys))
 
+lc='locality'
 
 def generate_site_id():
     key=project_dict[project_type]
     client_code=clients[clients.name==client_name].client_code.iloc[0]
     date=datetime.datetime.now()
     year=str(date.year)[2:]
-    return f"{key}-{client_code}{year}-{"lg"}-01"
+    return f"{key}-{client_code}{year}-{lc}-01"
     
 st.set_page_config(page_title="Create Site", page_icon="🌍")
 

@@ -66,7 +66,7 @@ selected_survey=site.surveys.survey_df
 selected_survey["start_dt"]=pd.to_datetime(selected_survey.start_date,format=DATE_STR_FORMAT)
 selected_survey["end_dt"]=pd.to_datetime(selected_survey.end_date,format=DATE_STR_FORMAT)
 
-st.header(f"{selected_client["name"]}")
+st.header(f"{selected_client['name']}")
 st.divider()
 
 cl_col1,cl_col2,cl_col3 = st.columns([1,1,3])

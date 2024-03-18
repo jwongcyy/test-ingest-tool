@@ -1,17 +1,14 @@
 import streamlit as st
 import pandas as pd
-import pydeck as pdk
-from urllib.error import URLError
 
+import os.path as path
+
+root =  path.abspath(path.join(__file__ ,"../../.."))
 # Get Operational data
-clients=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\clients.csv')
-sites=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\sites.csv')
-surveys=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\surveys.csv')
-agents=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\agents.csv')
-indicator_species=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefcheck\indicator_species.csv')
-species_db=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefcheck\species_db.csv')
-countries=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\countries.csv', encoding = "ISO-8859-1")
-agent_names=agents.full_name
+clients=pd.read_csv(f'{root}/data/reefops/clients.csv')
+sites=pd.read_csv(f'{root}/data/reefops/sites.csv')
+countries=pd.read_csv(f'{root}/data/reefops/countries.csv', encoding = "ISO-8859-1")
+
 
 site_ids=sites.site_id
 sids=[f"S{n}" for n in range(0,14)]

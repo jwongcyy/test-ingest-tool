@@ -12,6 +12,20 @@ from ReefCheck import ReefCheck
 from ReefOps import Site
 import plotly.express as px
 from streamlit_folium import st_folium
+import os.path as path
+
+
+root =  path.abspath(path.join(__file__ ,"../.."))
+
+# Get Operational data
+clients=pd.read_csv(f'{root}/data/reefops/clients.csv')
+#Get list of client names
+client_names=clients.name
+
+sites=pd.read_csv(f'{root}/data/reefops/sites.csv')
+
+rsfm_data=pd.read_csv(f'{root}/data/reefsfm/reefsfm_db_coral_metrics.csv')
+
 
 
 st.set_page_config(page_title="ReefOps Tool", layout="wide",page_icon=":tropical_fish:")
@@ -34,14 +48,6 @@ def format_bool(bool):
 regions=["United Arab Emirates", "Hong Kong"]
 
 
-# Get Operational data
-clients=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\clients.csv')
-clients=clients[(clients.onboarded==True) & (clients.reeftiles==True)]
-sites=pd.read_csv(r'C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefops\sites.csv')
-
-rsfm_data=pd.read_csv(r"C:\Users\medo_\PycharmProjects\Ops-Dashboard\data\reefsfm\reefsfm_db_coral_metrics.csv")
-#Get list of client names
-client_names=clients.name
 
 
 # Add a selectbox to the sidebar:

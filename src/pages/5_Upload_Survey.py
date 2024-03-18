@@ -18,7 +18,7 @@ agents=pd.read_csv(f'{root}/data/reefops/agents.csv')
 countries=pd.read_csv(f'{root}/data/reefops/countries.csv', encoding = "ISO-8859-1")
 surveys=pd.read_csv(f'{root}/data/reefops/surveys.csv')
 indicator_species=pd.read_csv(f'{root}/data/reefcheck/indicator_species.csv')
-species_db=pd.read_csv(f'{root}/data/reefcheck\species_db.csv')
+species_db=pd.read_csv(f'{root}/data/reefcheck/species_db.csv')
 
 agent_names=agents.full_name
 sids=[f"S{n}" for n in range(0,14)]

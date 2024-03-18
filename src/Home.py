@@ -106,10 +106,9 @@ col2.metric(label="Project Area" , value=f"{int(site.area_m2)} m2")
 col2.metric(label="Quantity" , value=int(site.site_df.quantity))
 
 # Column 3 content
-# map_data = pd.DataFrame(dict(lat= [site.site_df.latitude],lon = [site.site_df.longitude], size=500))
-m=site.map(write_html=False)
-with col3:
-    st_folium(m, width= 900)
+
+map_data = pd.DataFrame(dict(lat= [site.site_df.latitude],lon = [site.site_df.longitude], size=500))
+col3.map(map_data)
 
 
 st.divider()

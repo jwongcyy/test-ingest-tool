@@ -4,7 +4,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from ReefOps import time_stage_label
-from streamlit_calendar import calendar
 from config import DATE_STR_FORMAT
 import calendar
 import datetime
